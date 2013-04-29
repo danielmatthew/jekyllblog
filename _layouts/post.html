@@ -1,10 +1,45 @@
----
-layout: layout
----
-
-<div class="content">
-  <div id="post">
-    <h1>{{ post.title }}</h1>
-    {{ content }}
-  </div>
-</div>
+<!doctype HTML>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <link href="/assets/style.css" rel="stylesheet">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header class="row">
+      <h1 class="giga"><a href="/">{{ page.title }} | {{ site.name }}</a></h1>
+    </header>
+    <section id="journal" class="single row">
+		{{ content }}
+    </section>
+    <footer class="row">
+      <p class="copyright">&copy; 2013 Daniel Matthew</p>
+    </footer>
+    <script type="text/javascript">
+      (function() {
+        var config = {
+          kitId: 'bui5jnp',
+          scriptTimeout: 3000
+        };
+        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+      })();
+    </script>
+    <script type="text/javascript">
+       var GoSquared = {acct: "GSN-281256-H"};
+       (function(w){
+         function gs(){
+           w._gstc_lt = +new Date;
+           var d = document, g = d.createElement("script");
+           g.type = "text/javascript";
+           g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+           var s = d.getElementsByTagName("script")[0];
+           s.parentNode.insertBefore(g, s);
+         }
+         w.addEventListener ? w.addEventListener("load", gs, false) : w.attachEvent("onload", gs);
+       })(window);
+     </script>       
+  </body>
+</html>

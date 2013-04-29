@@ -1,33 +1,51 @@
-<!DOCTYPE HTML>
+<!doctype HTML>
 <html>
   <head>
     <title>Fugue State</title>
+    <link rel="stylesheet" href="assets/normalize.css">
     <link href="assets/style.css" rel="stylesheet">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header>
-      <h1><a href="/">Fugue State</a></h1>
+    <header class="row">
+      <h1 class="giga"><a href="/">Fugue State</a></h1>
     </header>
-    <section id="posts" class="row"> 
-      <div class="content">
-    
-	<h2><a href="/2013/03/13/on-jekyll">On Jekyll</a></h2>
-    <p>I&#8217;ve spent too long recently trying to decide whether to run this site on the existing installation of Wordpress, or to try and get my head around Jekyll.</p>
-
-<p>And do you know what I&#8217;ve realised? It really doesn&#8217;t matter.</p>  
-      
-	<h2><a href="/2013/01/11/fuck-the-platform">F*** the platform</a></h2>
-    <p>I&#8217;ve spent too long recently trying to decide whether to run this site on the existing installation of Wordpress, or to try and get my head around Jekyll.</p>
-
-<p>And do you know what I&#8217;ve realised? It really doesn&#8217;t matter.</p>  
-      
-</div>
+      <section id="portfolio" class="row">
+        <div class="portfolio-item">
+          <img src="assets/breezi_placeit.png" alt="">
+          <div class="portfolio-description">
+          <h1>CoStarred</h1>
+          <p>A collaboration between myself and <a href="http://benhowdle.im">Ben Howdle</a>. Easily discover the films an actor combination have featured in.</p>
+        </div>
+      </div>    
+      </section>
+    <section id="journal" class="row">
+      <dl>
+        
+        <dt>24 Apr 2013</dt><dd><h2><a href="/2013/04/24/jquery-makes-javascript-harder">jQuery Has Made JavaScript Harder</a></h2></dd>
+        
+        <dt>22 Apr 2013</dt><dd><h2><a href="/2013/04/22/new-definition-of-irony">New Definition of Irony</a></h2></dd>
+        
+        <dt>10 Apr 2013</dt><dd><h2><a href="/2013/04/10/i-don%27t-want-to-register">I don't want to register</a></h2></dd>
+        
+        <dt>20 Mar 2013</dt><dd><h2><a href="/2013/03/20/vote-for-didlr">Vote for Didlr</a></h2></dd>
+        
+        <dt>14 Mar 2013</dt><dd><h2><a href="/2013/03/14/goodbye-google-reader">Goodbye Google Reader</a></h2></dd>
+        
+        <dt>14 Mar 2013</dt><dd><h2><a href="/2013/03/14/getting-started-is-tough">Getting Started Is Tough</a></h2></dd>
+        
+        <dt>13 Mar 2013</dt><dd><h2><a href="/2013/03/13/on-shareholders">On Shareholders</a></h2></dd>
+        
+        <dt>13 Mar 2013</dt><dd><h2><a href="/2013/03/13/on-jekyll">On Jekyll</a></h2></dd>
+        
+        <dt>11 Jan 2013</dt><dd><h2><a href="/2013/01/11/fuck-the-platform">F*** the platform</a></h2></dd>
+        
+      </dl>
     </section>
     <footer class="row">
-      <p>&copy; 2013</p>
+      <p class="copyright">&copy; 2013 Daniel Matthew</p>
     </footer>
     <script type="text/javascript">
       (function() {
@@ -37,6 +55,20 @@
         };
         var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
       })();
-    </script> 
+    </script>
+    <script type="text/javascript">
+       var GoSquared = {acct: "GSN-281256-H"};
+       (function(w){
+         function gs(){
+           w._gstc_lt = +new Date;
+           var d = document, g = d.createElement("script");
+           g.type = "text/javascript";
+           g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+           var s = d.getElementsByTagName("script")[0];
+           s.parentNode.insertBefore(g, s);
+         }
+         w.addEventListener ? w.addEventListener("load", gs, false) : w.attachEvent("onload", gs);
+       })(window);
+     </script>       
   </body>
 </html>
